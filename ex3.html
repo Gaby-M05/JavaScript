@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        html, body{ min-height: 100%;}
+        body{
+            background-image: linear-gradient(to right, rgb(26, 131, 83), #FFFFFF);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: right;
+        }
+        ol{
+            position: absolute;
+            left: 10%;
+            height: 300px;
+            font-size: medium;
+            line-height: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Roteiro com tipos de casos de testes fundamentais no desenvolvimento de qualquer software</h1>
+    <p>Fonte: Grupo de testadores de software.</p>
+    <ol>
+        <li><strong>Layout:</strong> testar o layout de cada tela do sistema</li>
+        <li><strong>Campos obrigatórios:</strong> verificar se os campos obrigatórios estão sendo corretamente tratados. Por exemplo: verificar se ao deixar um campo obrigatório em branco se está aparecendo a mensagem.</li>
+        <li><strong>Máscara: </strong>verificar se os campos estão sendo preenchidos com suas respectivas máscaras. Por exemplo: o campo CPF deve ser preenchido com a máscara nnn.nnn.nnn-nn</li>
+        <li><strong>Valores permitidos: </strong>verificar se os campos estão sendo validados no caso de receberem valores não permitidos. Por exmplo: campos numéricos não devem aceitar caracteres especiais e/ou letras.</li>
+        <li><strong>Valores nulos: </strong>vereficar se um campo que só pode aceitar valor maior que zero, está aceitando valor menor ou igual a zero.</li>
+        <li><strong>Valores limite: </strong> verificar qual o valor máximo e mínimo permitido para certo campo. Testar se ao inserir um valor fora do limite está aparecendo a devida mensagem.</li>
+        <li><strong>Aceitação de caracteres especiais: </strong> verificar se os campos de texto estão aceitando caracteres especiais.</li>
+        <li><strong>Validação de campos (Data, CPF, CNPJ): </strong>verificar se foi digitada uma data, CPF ou CNPJ válido.</li>
+        <li><strong>Eventos do mouse: </strong>realizar testes que copiam textos com o mouse e colam e verificar se estes campos estão sendo validados corretamente.</li>
+        <li><strong>Espaços em branco: </strong>num campo obrigatório, preencher com espaços em branco e verificar se o sistema detectou que o campo está vazio.</li>
+        <li><strong>Ortografia: </strong>verificar a ortografia de todo e qualquer texto do sistema, inclusive de mensagem de alerta.</li>
+        <li><strong>Navegadores: </strong>Os sistemas web geralmente possuem comportamentos diferentes quando são visualizados em diferentes navegadores. É importante criar um caso de teste para executar o sisterma nos principais navegadores.</li>
+        <li><strong>Resolução do monitor: </strong></li>
+    </ol>
+   
+    <script>
+        let nome = window.prompt('Olá! Qual o seu nome?')
+        window.alert(`${nome}, vou te mostrar um roteiro para testes de softwares!`)
+    </script>
+</body>
+</html>
